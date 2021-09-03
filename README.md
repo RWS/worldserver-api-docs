@@ -1,2 +1,2 @@
-# worldserver-api-docs
-WorldServer Public API Documentation
+# WorldServer Public API Documentation
+Coming soon...
