@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> </title>
+    <title>WorldServer documentation for software developers </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" ">
+    <meta name="title" content="WorldServer documentation for software developers ">
     <meta name="generator" content="docfx 2.58.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -80,9 +80,53 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="worldserver-documentation-for-software-developers">WorldServer documentation for software developers</h1>
 
-<p>WorldServer API</p>
-<p>Information about the WorldServer API is currently being prepared. We will update the API documentation as soon as possible.</p>
+<p>In WorldServer, software developers can enhance standard functionality through the Software Development Kit (SDK), manage integrations via web services, or customize the user interface by adding new buttons, messages, or other elements.</p>
+<h2 id="working-with-the-software-development-kit-sdk">Working with the Software Development Kit (SDK)</h2>
+<p>The Software Development Kit (SDK) provides a stable, clearly defined layer of APIs for enhancing standard WorldServer features and for integrating WorldServer with other custom or third-party applications.</p>
+<h3 id="about-the-worldserver-sdkhttpsdocsrwscom860026488074worldserver-11-7-developer-documentationabout-the-worldserver-sdk"><a href="https://docs.rws.com/860026/488074/worldserver-11-7-developer-documentation/about-the-worldserver-sdk">About the WorldServer SDK</a></h3>
+<p>By using the WorldServer SDK, you can implement and manage your own extensions in-house. In other words, you can have complete control over WorldServer customizations.</p>
+<h3 id="about-installing-the-worldserver-sdkhttpsdocsrwscom860026501267worldserver-11-7-developer-documentationabout-installing-the-worldserver-sdk"><a href="https://docs.rws.com/860026/501267/worldserver-11-7-developer-documentation/about-installing-the-worldserver-sdk">About installing the WorldServer SDK</a></h3>
+<p>You can find the SDK installation archive in the WorldServer distribution kit. The archive contains the following: the libraries that you need to create and compile SDK applications, Java documentation for the SDK, additional documentation, and sample code that illustrates how to create WorldServer SDK applications.</p>
+<h3 id="sdk-sampleshttpsdocsrwscom860026501271worldserver-11-7-developer-documentationsdk-samples"><a href="https://docs.rws.com/860026/501271/worldserver-11-7-developer-documentation/sdk-samples">SDK samples</a></h3>
+<p>You can use the sample tools and components included in the samples directory to find out how to make the most of the WorldServer SDK.</p>
+<h3 id="sdk-services-and-featureshttpsdocsrwscom860026488138worldserver-11-7-developer-documentationsdk-services-and-features"><a href="https://docs.rws.com/860026/488138/worldserver-11-7-developer-documentation/sdk-services-and-features">SDK services and features</a></h3>
+<p>The following services are supported primarily through the APIs of the WorldServer SDK. Many of them, however, are also exposed through web services. You can also create custom web services in the SDK, which gives you great flexibility in integrating with WorldServer.</p>
+<h3 id="architecture-overviewhttpsdocsrwscom860026488086worldserver-11-7-developer-documentationarchitecture-overview"><a href="https://docs.rws.com/860026/488086/worldserver-11-7-developer-documentation/architecture-overview">Architecture overview</a></h3>
+<p>An overview of the WorldServer environment, components, objects, modules, and services that you can access with the SDK.</p>
+<h3 id="creating-and-deploying-custom-access-moduleshttpsdocsrwscom860026488130worldserver-11-7-developer-documentationcreating-and-deploying-custom-access-modules"><a href="https://docs.rws.com/860026/488130/worldserver-11-7-developer-documentation/creating-and-deploying-custom-access-modules">Creating and deploying custom access modules</a></h3>
+<p>Custom access modules are programs or components that have been developed by using the WorldServer SDK. You can create two types of custom access modules: external service modules and component modules.</p>
+<h3 id="components-supported-by-the-worldserver-sdkhttpsdocsrwscom860026488157worldserver-11-7-developer-documentationcomponents-supported-by-the-worldserver-sdk"><a href="https://docs.rws.com/860026/488157/worldserver-11-7-developer-documentation/components-supported-by-the-worldserver-sdk">Components supported by the WorldServer SDK</a></h3>
+<p>A brief description of the components supported by the SDK. Most of the content that might be relevant for developers is provided in the package and object-level Java documentation. The SDK also includes documented samples for each supported component.</p>
+<h3 id="other-objects-that-you-can-configurehttpsdocsrwscom860026488245worldserver-11-7-developer-documentationother-objects-that-you-can-configure"><a href="https://docs.rws.com/860026/488245/worldserver-11-7-developer-documentation/other-objects-that-you-can-configure">Other objects that you can configure</a></h3>
+<p>You can configure several types of non-component objects both through the WorldServer user interface and externally, through the components archive.</p>
+<h3 id="resources-for-web-serviceshttpsdocsrwscom860026859627worldserver-11-7-developer-documentationresources-for-web-services"><a href="https://docs.rws.com/860026/859627/worldserver-11-7-developer-documentation/resources-for-web-services">Resources for web services</a></h3>
+<p>An overview of the SDK components that make up the web service resources.</p>
+<h3 id="sample-tools-and-components-for-customizing-web-serviceshttpsdocsrwscom860026859635worldserver-11-7-developer-documentationsample-tools-and-components-for-customizing-web-services"><a href="https://docs.rws.com/860026/859635/worldserver-11-7-developer-documentation/sample-tools-and-components-for-customizing-web-services">Sample tools and components for customizing web services</a></h3>
+<p>An overview of the sample tools and components that provide models for customizing web services.</p>
+<h2 id="the-worldserver-rest-api">The WorldServer REST API</h2>
+<p>As of version 11.0, WorldServer contains an API based on modern standards (REST and JSON), implemented using the Spring Framework. It uses standard HTTP methods such as GET, POST, PATCH, or DELETE and provides a new layer of security to the WorldServer 11 interface, which is built on top of it.</p>
+<h3 id="api-release-noteshttpsdocsrwscom860026708306worldserver-11-7-developer-documentationapi-release-notes"><a href="https://docs.rws.com/860026/708306/worldserver-11-7-developer-documentation/api-release-notes">API release notes</a></h3>
+<p>An overview of the main changes made to the REST API in WorldServer 11.7.</p>
+<h3 id="overview-and-common-flowshttpsdocsrwscom860026481814worldserver-11-7-developer-documentationoverview-and-common-flows"><a href="https://docs.rws.com/860026/481814/worldserver-11-7-developer-documentation/overview-and-common-flows">Overview and common flows</a></h3>
+<p>Some operations that use the WorldServer API are more complex than others. Before you make a request, you might need to obtain certain information through other requests. For example, before you can complete a task step, you need to find out the ID of the transition to the next step. The topics in this section present the requests you need to make and the order in which you need to make them to perform a series of common operations with the WorldServer API.</p>
+<h3 id="rest-api-endpointshttpsdocsrwscom860026488286worldserver-11-7-developer-documentationrest-api-endpoints"><a href="https://docs.rws.com/860026/488286/worldserver-11-7-developer-documentation/rest-api-endpoints">REST API endpoints</a></h3>
+<p>Find out what endpoints you can call and what methods you can use to call each endpoint. You can also find sample calls, potential error messages, and a response for each call.</p>
+<h3 id="customizing-the-rest-apihttpsdocsrwscom860026814420worldserver-11-7-developer-documentationcustomizing-the-rest-api"><a href="https://docs.rws.com/860026/814420/worldserver-11-7-developer-documentation/customizing-the-rest-api">Customizing the REST API</a></h3>
+<p>Add custom endpoints to the new REST API by using the existing WorldServer SDK. However, you should use this only as an entry point into the REST API and delegate the customization logic to other classes.</p>
+<h2 id="customizations-for-the-worldserver-user-interface">Customizations for the WorldServer user interface</h2>
+<p>By using the customization SDK, you can develop user interface elements for various scenarios, such as adding a button on the ribbon, having a dialog box displayed, or customizing a task completion screen.
+From a technical standpoint, you can add a customization anywhere on the WorldServer user interface. However, doing so without a customization SDK would be difficult and not recommended. As time passes by and the user interface changes, the customization SDK helps you to manage your own customizations and to maintain a certain level of consistency with the standard WorldServer interface.
+<strong>Note:</strong> The customization SDK refers to a set of options that you have when customizing the interface. It has no representation within the actual SDK in the WorldServer distribution kit.</p>
+<h3 id="available-controlshttpsdocsrwscom860026489240worldserver-11-7-developer-documentationavailable-controls"><a href="https://docs.rws.com/860026/489240/worldserver-11-7-developer-documentation/available-controls">Available controls</a></h3>
+<p>The customization SDK contains several UI controls that you can inject as require dependencies. These controls are located in the <em>sdk/controls/<control-name></control-name></em> namespace.</p>
+<h3 id="available-serviceshttpsdocsrwscom860026501848worldserver-11-7-developer-documentationavailable-services"><a href="https://docs.rws.com/860026/501848/worldserver-11-7-developer-documentation/available-services">Available services</a></h3>
+<p>The customization SDK contains several UI services that you can inject as require dependencies. These services are located in the <em>sdk/services</em> namespace.</p>
+<h3 id="sample-ui-customizationshttpsdocsrwscom860026865367worldserver-11-7-developer-documentationsample-ui-customizations"><a href="https://docs.rws.com/860026/865367/worldserver-11-7-developer-documentation/sample-ui-customizations">Sample UI customizations</a></h3>
+<p>Links to sample UI customizations that you can download, add to a test environment, and use as starting points for your own customizations.</p>
+<h3 id="working-with-ui-customizationshttpsdocsrwscom860026481770worldserver-11-7-developer-documentationworking-with-ui-customizations"><a href="https://docs.rws.com/860026/481770/worldserver-11-7-developer-documentation/working-with-ui-customizations">Working with UI customizations</a></h3>
+<p>Starting with version 11.1, you can implement and manage UI customizations directly from WorldServer by logging in as an administrator and typing the following in your browser&#39;s address bar: <em><ws-host>:<ws-port>/ws/customizations</ws-port></ws-host></em>, where <em><ws-host></ws-host></em> is the name or IP address of the machine on which WorldServer is installed and <em><ws-port></ws-port></em> is the number of the port on which WorldServer is installed.</p>
 </article>
           </div>
           
