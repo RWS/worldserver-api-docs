@@ -1,4 +1,6 @@
+- name: WorldServer
+  href: index.md
 - name: Articles
   href: articles/
-- name: WorldServer APIs
+- name: API
   href: apiconcepts/
